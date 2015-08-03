@@ -1,0 +1,13 @@
+.container
+  h1 Project Euler
+  div.i By Mordrax
+
+
+  +each questions
+    div
+      a(href="http://projecteuler.net/problem={{.}}") Question {{.}}:&nbsp;
+      span
+        +if answer .
+          | {{answer .}}
+        +else
+          button.btn(data-q="{{.}}") Ponder
