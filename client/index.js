@@ -3,7 +3,7 @@ Template.body.helpers({
         return Session.get(num);
     },
     questions: function () {
-        return [1, 2];
+        return [1, 2, 3];
     }
 });
 
